@@ -31,7 +31,7 @@
         <!--Image View Controller-->
         <scene sceneID="HKf-Zw-9f0">
             <objects>
-                <viewController id="wWN-hk-bIf" customClass="ImageViewController" sceneMemberID="viewController">
+                <viewController id="wWN-hk-bIf" customClass="ImageViewController" customModule="SimpsonsJASONApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPN-rX-YKe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
