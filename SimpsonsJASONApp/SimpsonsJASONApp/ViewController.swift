@@ -43,7 +43,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let decoder = JSONDecoder()
             let downloadedCharacters = try decoder.decode(SimpsonsCharacters.self, from: data)
             ViewController.simpsonsCharacters = downloadedCharacters.RelatedTopics
-//            print(self.simpsonsCharacters[0].Text)
             DispatchQueue.main.async
                 {
                     self.tableView.reloadData()

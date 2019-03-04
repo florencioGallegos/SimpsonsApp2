@@ -27,10 +27,19 @@ class ImageViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         print("Before")
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Imagecell", for: indexPath) as! CharacterImageViewCell
-//        let imageURL = URL(ViewController.simpsonsCharacters[indexPath.row].Icon.URL)
-        //   let data = try? Data(contentsOf: imageURL!)
-        cell.CharacterImageView.image = UIImage(named: "Apu.png")
-        print("After")
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterImageCell", for: indexPath) as! CharacterImageViewCell
+        
+        cell.CharacterImageView.image = nil
+        if let imageURL = URL(string: ViewController.simpsonsCharacters[indexPath.row].Icon.URL) {
+            URLSession.shared.dataTask(with: imageURL) { (data, _, _) in
+                if let dat = data {
+                    let image = UIImage(data: dat)
+                    DispatchQueue.main.async {
+                        cell.CharacterImageView.image = image
+                        print("After")
+                    }
+                }
+            }.resume()
+        }
         return cell
     }}
