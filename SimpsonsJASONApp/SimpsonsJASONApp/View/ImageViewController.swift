@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var ImagetableView: UICollectionView!
     
@@ -43,7 +43,7 @@ class ImageViewController: UIViewController {
         return cell
     }
 }
-
+/*
 extension collectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ViewController.simpsonsCharacters.count
@@ -71,3 +71,4 @@ extension collectionView: UICollectionViewDataSource {
 extension collectionView: UICollectionViewDelegate {
     
 }
+*/

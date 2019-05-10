@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0203DDB122850AAF0057B903 /* JSONSeralization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203DDB022850AAF0057B903 /* JSONSeralization.swift */; };
+		0203DDB32286130E0057B903 /* CharacterImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203DDB22286130E0057B903 /* CharacterImageViewCell.swift */; };
 		020C0606222B520300666715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0605222B520300666715 /* AppDelegate.swift */; };
 		020C0608222B520300666715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0607222B520300666715 /* ViewController.swift */; };
 		020C060B222B520300666715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020C0609222B520300666715 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0203DDB022850AAF0057B903 /* JSONSeralization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSeralization.swift; sourceTree = "<group>"; };
+		0203DDB22286130E0057B903 /* CharacterImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterImageViewCell.swift; path = ../../../../../Documents/SimpsonsJASONApp/SimpsonsJASONApp/CharacterImageViewCell.swift; sourceTree = "<group>"; };
 		020C0602222B520300666715 /* SimpsonsJASONApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpsonsJASONApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		020C0605222B520300666715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		020C0607222B520300666715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				0203DDAC2284F3980057B903 /* Model */,
 				026ABCB9222CF1D800BADD1B /* Pictures */,
 				020C0605222B520300666715 /* AppDelegate.swift */,
+				0203DDB22286130E0057B903 /* CharacterImageViewCell.swift */,
 				020C0633222B575300666715 /* SimpsonsCharacterCell.swift */,
 				020C0609222B520300666715 /* Main.storyboard */,
 				020C060C222B520A00666715 /* Assets.xcassets */,
@@ -316,6 +319,7 @@
 				020C0606222B520300666715 /* AppDelegate.swift in Sources */,
 				0203DDB122850AAF0057B903 /* JSONSeralization.swift in Sources */,
 				020C0634222B575300666715 /* SimpsonsCharacterCell.swift in Sources */,
+				0203DDB32286130E0057B903 /* CharacterImageViewCell.swift in Sources */,
 				026ABCB6222CEAA100BADD1B /* ImageViewController.swift in Sources */,
 				020C0638222B694100666715 /* SimpsonsCharacter.swift in Sources */,
 			);
