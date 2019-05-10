@@ -5,10 +5,11 @@
 //  Created by MAC Consultant on 5/9/19.
 //  Copyright © 2019 MAC Consultant. All rights reserved.
 //
-/*
+
 import UIKit
 
-class JSONSeralization: NSObject {
+
+class JSONSeralization {
     
  final let url = URL(string: "http://api.duckduckgo.com/?q=simpsons+characters&format=json")
  static var simpsonsCharacters  = [SimpsonsCharacter]()
@@ -29,7 +30,7 @@ class JSONSeralization: NSObject {
                 ViewController.simpsonsCharacters = downloadedCharacters.RelatedTopics
                 DispatchQueue.main.async
                     {
-                        ViewController.tableView.reloadData()
+                        
                 }
             } catch
             {
@@ -40,4 +41,4 @@ class JSONSeralization: NSObject {
     
 }
 
-*/
+
