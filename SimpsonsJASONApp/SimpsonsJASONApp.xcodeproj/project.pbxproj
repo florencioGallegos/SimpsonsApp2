@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0203DDB122850AAF0057B903 /* JSONSeralization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203DDB022850AAF0057B903 /* JSONSeralization.swift */; };
 		020C0606222B520300666715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0605222B520300666715 /* AppDelegate.swift */; };
 		020C0608222B520300666715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0607222B520300666715 /* ViewController.swift */; };
 		020C060B222B520300666715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020C0609222B520300666715 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		020C0626222B520A00666715 /* SimpsonsJASONAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0625222B520A00666715 /* SimpsonsJASONAppUITests.swift */; };
 		020C0634222B575300666715 /* SimpsonsCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0633222B575300666715 /* SimpsonsCharacterCell.swift */; };
 		020C0638222B694100666715 /* SimpsonsCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0637222B694100666715 /* SimpsonsCharacter.swift */; };
-		026ABCB2222CDBE400BADD1B /* CharacterImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ABCB1222CDBE400BADD1B /* CharacterImageViewCell.swift */; };
 		026ABCB6222CEAA100BADD1B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ABCB5222CEAA100BADD1B /* ImageViewController.swift */; };
 		026ABCB8222CF0EE00BADD1B /* Apu.png in Resources */ = {isa = PBXBuildFile; fileRef = 026ABCB7222CF0EE00BADD1B /* Apu.png */; };
 /* End PBXBuildFile section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0203DDB022850AAF0057B903 /* JSONSeralization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSeralization.swift; sourceTree = "<group>"; };
 		020C0602222B520300666715 /* SimpsonsJASONApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpsonsJASONApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		020C0605222B520300666715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		020C0607222B520300666715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +54,7 @@
 		020C0625222B520A00666715 /* SimpsonsJASONAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpsonsJASONAppUITests.swift; sourceTree = "<group>"; };
 		020C0627222B520A00666715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		020C0633222B575300666715 /* SimpsonsCharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpsonsCharacterCell.swift; sourceTree = "<group>"; };
-		020C0637222B694100666715 /* SimpsonsCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpsonsCharacter.swift; path = ../SimpsonsCharacter.swift; sourceTree = "<group>"; };
-		026ABCB1222CDBE400BADD1B /* CharacterImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageViewCell.swift; sourceTree = "<group>"; };
+		020C0637222B694100666715 /* SimpsonsCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpsonsCharacter.swift; sourceTree = "<group>"; };
 		026ABCB5222CEAA100BADD1B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		026ABCB7222CF0EE00BADD1B /* Apu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +84,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0203DDAC2284F3980057B903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				020C0637222B694100666715 /* SimpsonsCharacter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0203DDAD2284F3AF0057B903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				020C0607222B520300666715 /* ViewController.swift */,
+				026ABCB5222CEAA100BADD1B /* ImageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0203DDAE2284F3BC0057B903 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0203DDB022850AAF0057B903 /* JSONSeralization.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0203DDAF2284F3C50057B903 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		020C05F9222B520200666715 = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +139,13 @@
 		020C0604222B520300666715 /* SimpsonsJASONApp */ = {
 			isa = PBXGroup;
 			children = (
+				0203DDAF2284F3C50057B903 /* ViewModel */,
+				0203DDAE2284F3BC0057B903 /* Services */,
+				0203DDAD2284F3AF0057B903 /* View */,
+				0203DDAC2284F3980057B903 /* Model */,
 				026ABCB9222CF1D800BADD1B /* Pictures */,
 				020C0605222B520300666715 /* AppDelegate.swift */,
-				020C0607222B520300666715 /* ViewController.swift */,
-				020C0637222B694100666715 /* SimpsonsCharacter.swift */,
 				020C0633222B575300666715 /* SimpsonsCharacterCell.swift */,
-				026ABCB1222CDBE400BADD1B /* CharacterImageViewCell.swift */,
-				026ABCB5222CEAA100BADD1B /* ImageViewController.swift */,
 				020C0609222B520300666715 /* Main.storyboard */,
 				020C060C222B520A00666715 /* Assets.xcassets */,
 				020C060E222B520A00666715 /* LaunchScreen.storyboard */,
@@ -282,7 +314,7 @@
 			files = (
 				020C0608222B520300666715 /* ViewController.swift in Sources */,
 				020C0606222B520300666715 /* AppDelegate.swift in Sources */,
-				026ABCB2222CDBE400BADD1B /* CharacterImageViewCell.swift in Sources */,
+				0203DDB122850AAF0057B903 /* JSONSeralization.swift in Sources */,
 				020C0634222B575300666715 /* SimpsonsCharacterCell.swift in Sources */,
 				026ABCB6222CEAA100BADD1B /* ImageViewController.swift in Sources */,
 				020C0638222B694100666715 /* SimpsonsCharacter.swift in Sources */,

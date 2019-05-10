@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate 
-{
+class ViewController: UIViewController {
    
 
     final let url = URL(string: "http://api.duckduckgo.com/?q=simpsons+characters&format=json")
@@ -54,17 +53,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }.resume()
     }
     
+}
+
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ViewController.simpsonsCharacters.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     //   let characterIndex = indexPath.row
-    //    let delimiter = "-"
+        //   let characterIndex = indexPath.row
+        //    let delimiter = "-"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
             else
-                    { return UITableViewCell()}
+        { return UITableViewCell()}
         cell.textLabel?.text = "Character: " + ViewController.simpsonsCharacters[indexPath.row].Text
         return cell
     }
+}
+
+extension ViewController: UITableViewDelegate {
 }
