@@ -14,37 +14,16 @@ class ImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ImagetableView.delegate = (self as! UICollectionViewDelegate)
-        ImagetableView.dataSource = (self as! UICollectionViewDataSource)
+        ImagetableView.delegate = self
+        ImagetableView.dataSource = self
         ImagetableView.register(UICollectionViewCell.self, forCellWithReuseIdentifier:"Imagecell")
         // Do any additional setup after loading the view.
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return ViewController.simpsonsCharacters.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print("Before")
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterImageCell", for: indexPath) as! CharacterImageViewCell
-        
-        cell.CharacterImageView.image = nil
-        if let imageURL = URL(string: ViewController.simpsonsCharacters[indexPath.row].Icon.URL) {
-            URLSession.shared.dataTask(with: imageURL) { (data, _, _) in
-                if let dat = data {
-                    let image = UIImage(data: dat)
-                    DispatchQueue.main.async {
-                        cell.CharacterImageView.image = image
-                        print("After")
-                    }
-                }
-            }.resume()
-        }
-        return cell
-    }
+ 
 }
 
-extension collectionView: UICollectionViewDataSource {
+extension ImageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ViewController.simpsonsCharacters.count
     }
@@ -68,6 +47,6 @@ extension collectionView: UICollectionViewDataSource {
         return cell
     }
 }
-extension collectionView: UICollectionViewDelegate {
+extension ImageViewController: UICollectionViewDelegate {
     
 }

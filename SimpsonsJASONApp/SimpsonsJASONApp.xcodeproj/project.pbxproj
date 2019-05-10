@@ -19,6 +19,7 @@
 		020C0638222B694100666715 /* SimpsonsCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C0637222B694100666715 /* SimpsonsCharacter.swift */; };
 		026ABCB6222CEAA100BADD1B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ABCB5222CEAA100BADD1B /* ImageViewController.swift */; };
 		026ABCB8222CF0EE00BADD1B /* Apu.png in Resources */ = {isa = PBXBuildFile; fileRef = 026ABCB7222CF0EE00BADD1B /* Apu.png */; };
+		EDB6E2D122861AD6000CAF86 /* CharacterImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6E2D022861AD6000CAF86 /* CharacterImageViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		020C0637222B694100666715 /* SimpsonsCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpsonsCharacter.swift; sourceTree = "<group>"; };
 		026ABCB5222CEAA100BADD1B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		026ABCB7222CF0EE00BADD1B /* Apu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apu.png; sourceTree = "<group>"; };
+		EDB6E2D022861AD6000CAF86 /* CharacterImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				020C0607222B520300666715 /* ViewController.swift */,
 				026ABCB5222CEAA100BADD1B /* ImageViewController.swift */,
+				EDB6E2D022861AD6000CAF86 /* CharacterImageViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				020C0606222B520300666715 /* AppDelegate.swift in Sources */,
 				0203DDB122850AAF0057B903 /* JSONSeralization.swift in Sources */,
 				020C0634222B575300666715 /* SimpsonsCharacterCell.swift in Sources */,
+				EDB6E2D122861AD6000CAF86 /* CharacterImageViewCell.swift in Sources */,
 				026ABCB6222CEAA100BADD1B /* ImageViewController.swift in Sources */,
 				020C0638222B694100666715 /* SimpsonsCharacter.swift in Sources */,
 			);

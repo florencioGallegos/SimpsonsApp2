@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JSONSeralization: NSObject, ViewController {
+class JSONSeralization {
     
  final let url = URL(string: "http://api.duckduckgo.com/?q=simpsons+characters&format=json")
  static var simpsonsCharacters  = [SimpsonsCharacter]()
@@ -29,7 +29,6 @@ class JSONSeralization: NSObject, ViewController {
                 ViewController.simpsonsCharacters = downloadedCharacters.RelatedTopics
                 DispatchQueue.main.async
                     {
-                        ViewController.tableView.reloadData()
                 }
             } catch
             {
